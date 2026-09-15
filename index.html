@@ -1,187 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Golden Stone株式会社 — 解体工事・建設工事・廃棄物管理。安全・信頼・責任を大切に、確かな施工品質を提供します。" />
-  <meta name="theme-color" content="#0c0c0c" />
-  <title>Golden Stone株式会社 | Demolition & Construction</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#111111" />
+  <meta name="description" content="Golden stone 株式会社｜解体工事・内装解体・コンクリート解体・産業廃棄物収集運搬" />
+  <title>Golden stone 株式会社｜解体工事</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header" id="top">
     <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Golden Stone home">
-        <span class="brand-mark" aria-hidden="true">GS</span>
-        <span class="brand-copy"><strong>Golden Stone</strong><small>株式会社</small></span>
+      <a class="brand" href="#top" aria-label="Golden stone home">
+        <img src="assets/golden-stone-logo.png" alt="Golden Stone logo" class="brand-logo" />
+        <div class="brand-copy"><strong>Golden stone</strong><span>株式会社</span></div>
       </a>
-      <nav class="desktop-nav" aria-label="Primary">
-        <a href="#about" data-i18n="nav.about">会社案内</a>
-        <a href="#services" data-i18n="nav.services">事業内容</a>
-        <a href="#strengths" data-i18n="nav.strengths">強み</a>
-        <a href="#message" data-i18n="nav.message">代表メッセージ</a>
-        <a href="#contact" data-i18n="nav.contact">お問い合わせ</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#services" data-ja="事業内容" data-en="Services">事業内容</a>
+        <a href="#about" data-ja="会社概要" data-en="About">会社概要</a>
+        <a href="#message" data-ja="代表メッセージ" data-en="Director's Message">代表メッセージ</a>
+        <a href="#works" data-ja="施工実績" data-en="Works">施工実績</a>
+        <a href="#contact" data-ja="お問い合わせ" data-en="Contact">お問い合わせ</a>
+        <div class="lang-switch" aria-label="Language switcher"><button data-lang="ja" class="active">JP</button><span>/</span><button data-lang="en">EN</button></div>
       </nav>
-      <div class="nav-actions">
-        <div class="language-switch" role="group" aria-label="Language switcher">
-          <button class="lang-btn active" data-lang="ja">日本語</button>
-          <button class="lang-btn" data-lang="en">EN</button>
-        </div>
-        <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
-      </div>
-    </div>
-    <div class="mobile-menu" hidden>
-      <a href="#about" data-i18n="nav.about">会社案内</a>
-      <a href="#services" data-i18n="nav.services">事業内容</a>
-      <a href="#strengths" data-i18n="nav.strengths">強み</a>
-      <a href="#message" data-i18n="nav.message">代表メッセージ</a>
-      <a href="#contact" data-i18n="nav.contact">お問い合わせ</a>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero-grid"></div>
-      <div class="hero-shape hero-shape-one"></div>
-      <div class="hero-shape hero-shape-two"></div>
+      <div class="hero-bg" role="img" aria-label="Interior demolition work"></div>
+      <div class="hero-shade"></div>
       <div class="container hero-content">
-        <div class="eyebrow"><span></span><b data-i18n="hero.eyebrow">DEMOLITION · CONSTRUCTION · MANAGEMENT</b></div>
-        <h1 data-i18n="hero.title">安全を基盤に、<br><em>確かな未来を築く。</em></h1>
-        <p data-i18n="hero.text">Golden Stone株式会社は、解体工事、建設工事、廃棄物管理を通じて、安全性・品質・責任を重視したサービスを提供します。</p>
+        <div class="eyebrow" data-ja="解体工事・内装解体の専門会社" data-en="Demolition & Interior Strip-out Specialists">解体工事・内装解体の専門会社</div>
+        <h1 data-ja-html="解体工事で、<br><span>新しい空間をつくる。</span>" data-en-html="Demolition that<br><span>makes room for what’s next.</span>">解体工事で、<br><span>新しい空間をつくる。</span></h1>
+        <p data-ja="安全・確実・丁寧な解体で、次の未来へつなげます。" data-en="Safe, reliable and careful demolition that prepares every site for its next chapter.">安全・確実・丁寧な解体で、次の未来へつなげます。</p>
         <div class="hero-actions">
-          <a class="btn btn-gold" href="#contact" data-i18n="hero.cta">お問い合わせ</a>
-          <a class="btn btn-outline" href="#services" data-i18n="hero.secondary">事業内容を見る</a>
+          <a class="btn primary" href="#contact" data-ja="お問い合わせ" data-en="Contact us">お問い合わせ</a>
+          <a class="btn ghost" href="#services" data-ja="事業内容を見る" data-en="View services">事業内容を見る</a>
         </div>
-        <div class="hero-stats">
-          <div><strong>7+</strong><span data-i18n="stats.years">年の経験</span></div>
-          <div><strong>120+</strong><span data-i18n="stats.projects">大小の施工実績</span></div>
-          <div><strong>JP / MN</strong><span data-i18n="stats.network">日本・モンゴル対応</span></div>
-        </div>
-      </div>
-      <div class="scroll-cue" aria-hidden="true"><span></span></div>
-    </section>
-
-    <section class="section section-light" id="about">
-      <div class="container two-col">
-        <div>
-          <div class="section-tag" data-i18n="about.tag">ABOUT US</div>
-          <h2 data-i18n="about.title">信頼される仕事を、<br>一つひとつ確実に。</h2>
-        </div>
-        <div class="lead-copy">
-          <p data-i18n="about.p1">Golden Stone株式会社は、「安全・信頼・責任」を大切にし、解体・建設・廃棄物管理の各分野で専門性を高めてきました。</p>
-          <p data-i18n="about.p2">現場ごとの条件を丁寧に把握し、施工計画から安全管理、工程管理、整理・搬出まで、プロジェクト全体を見据えた対応を行います。</p>
-        </div>
-      </div>
-
-      <div class="container value-row">
-        <article class="value-card"><span>01</span><h3 data-i18n="values.safety.title">安全</h3><p data-i18n="values.safety.text">すべての業務において安全を最優先に考えます。</p></article>
-        <article class="value-card"><span>02</span><h3 data-i18n="values.trust.title">信頼</h3><p data-i18n="values.trust.text">長期的な信頼関係につながる誠実な仕事を徹底します。</p></article>
-        <article class="value-card"><span>03</span><h3 data-i18n="values.responsibility.title">責任</h3><p data-i18n="values.responsibility.text">品質・工程・約束に責任を持ち、最後までやり遂げます。</p></article>
       </div>
     </section>
 
-    <section class="section section-dark" id="services">
+    <section class="section" id="services">
       <div class="container">
-        <div class="section-head">
-          <div><div class="section-tag gold" data-i18n="services.tag">SERVICES</div><h2 data-i18n="services.title">事業内容</h2></div>
-          <p data-i18n="services.intro">大型案件から小規模工事まで、現場条件に合わせた最適な施工方法を提案します。</p>
-        </div>
+        <div class="section-head"><div><span class="kicker">SERVICE</span><h2 data-ja="事業内容" data-en="Services">事業内容</h2></div><p data-ja="解体工事を中心に、現場に合わせた一貫対応。" data-en="Demolition-centered services delivered as one coordinated workflow.">解体工事を中心に、現場に合わせた一貫対応。</p></div>
         <div class="service-grid">
-          <article class="service-card"><div class="service-num">01</div><div class="service-icon">⌂</div><h3 data-i18n="services.demolition.title">解体工事</h3><p data-i18n="services.demolition.text">鉄筋コンクリート建物、基礎、地下構造物などの解体に対応。分別・積込・搬出まで一体的に管理します。</p></article>
-          <article class="service-card"><div class="service-num">02</div><div class="service-icon">▰</div><h3 data-i18n="services.construction.title">建設工事</h3><p data-i18n="services.construction.text">安全・品質・工程を重視し、現場に適した施工体制で建設関連工事を実施します。</p></article>
-          <article class="service-card"><div class="service-num">03</div><div class="service-icon">↻</div><h3 data-i18n="services.waste.title">廃棄物管理</h3><p data-i18n="services.waste.text">解体材・金属・コンクリート等の適切な分別と搬出を通じ、環境負荷低減を目指します。</p></article>
-          <article class="service-card"><div class="service-num">04</div><div class="service-icon">⚙</div><h3 data-i18n="services.equipment.title">重機施工・現場管理</h3><p data-i18n="services.equipment.text">重機を活用した施工、現場内運搬、安全管理、工程管理を含めた総合的な現場運営に対応します。</p></article>
+          <article class="service-card"><img src="assets/service-1.jpg" alt="Interior demolition"/><div><span>01</span><h3 data-ja="内装解体工事" data-en="Interior demolition">内装解体工事</h3><p data-ja="オフィス・店舗・住宅などの内装解体、原状回復。" data-en="Interior strip-out and restoration for offices, shops and residences.">オフィス・店舗・住宅などの内装解体、原状回復。</p></div></article>
+          <article class="service-card"><img src="assets/service-2.jpg" alt="Building demolition"/><div><span>02</span><h3 data-ja="建物解体工事" data-en="Building demolition">建物解体工事</h3><p data-ja="木造・RC造・S造など、建物全体の解体工事。" data-en="Full demolition for timber, RC and steel structures.">木造・RC造・S造など、建物全体の解体工事。</p></div></article>
+          <article class="service-card"><img src="assets/service-3.jpg" alt="Concrete demolition"/><div><span>03</span><h3 data-ja="コンクリート解体" data-en="Concrete demolition">コンクリート解体</h3><p data-ja="基礎・土間・外構など、コンクリート構造物の解体。" data-en="Removal of concrete foundations, slabs and external structures.">基礎・土間・外構など、コンクリート構造物の解体。</p></div></article>
+          <article class="service-card"><img src="assets/service-4.jpg" alt="Waste transport"/><div><span>04</span><h3 data-ja="廃棄物収集・運搬" data-en="Waste collection & transport">廃棄物収集・運搬</h3><p data-ja="分別・積込み・運搬まで、適正な処理を徹底。" data-en="Sorting, loading and transport with proper waste handling.">分別・積込み・運搬まで、適正な処理を徹底。</p></div></article>
+          <article class="service-card"><img src="assets/service-5.jpg" alt="Site restoration"/><div><span>05</span><h3 data-ja="整地・原状回復" data-en="Site restoration">整地・原状回復</h3><p data-ja="解体後の清掃・整地まで一貫して対応します。" data-en="Final cleanup, grading and handover preparation.">解体後の清掃・整地まで一貫して対応します。</p></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section strengths" id="strengths">
-      <div class="container">
-        <div class="section-tag" data-i18n="strengths.tag">WHY GOLDEN STONE</div>
-        <h2 data-i18n="strengths.title">選ばれる理由</h2>
-        <div class="strength-grid">
-          <div class="strength-visual">
-            <div class="machine-line-art" aria-hidden="true">
-              <svg viewBox="0 0 700 420" role="img" aria-label="Construction equipment illustration">
-                <g fill="none" stroke="currentColor" stroke-width="4">
-                  <path d="M105 308h270l46 48H84z"/>
-                  <path d="M168 308V184h148l65 62v62"/>
-                  <path d="M189 206h104l46 43H189z"/>
-                  <path d="M317 186l106-69 39 27-106 103"/>
-                  <path d="M452 130l113 35-18 53-124-42"/>
-                  <path d="M548 218l58 55-32 35-68-52z"/>
-                  <circle cx="157" cy="350" r="42"/><circle cx="331" cy="350" r="42"/>
-                </g>
-              </svg>
-            </div>
-            <div class="visual-label" data-i18n="strengths.visual">SAFETY FIRST · PROFESSIONAL EXECUTION</div>
-          </div>
-          <div class="strength-list">
-            <div class="strength-item"><b>01</b><div><h3 data-i18n="strengths.s1.title">安全を最優先</h3><p data-i18n="strengths.s1.text">作業前計画、危険予知、現場管理を重視し、安全な施工を徹底します。</p></div></div>
-            <div class="strength-item"><b>02</b><div><h3 data-i18n="strengths.s2.title">豊富な現場経験</h3><p data-i18n="strengths.s2.text">7年以上、120件を超える大小の案件を通じて蓄積した実務経験があります。</p></div></div>
-            <div class="strength-item"><b>03</b><div><h3 data-i18n="strengths.s3.title">一貫した対応</h3><p data-i18n="strengths.s3.text">解体、分別、積込、搬出、整地まで現場全体を見据えて管理します。</p></div></div>
-            <div class="strength-item"><b>04</b><div><h3 data-i18n="strengths.s4.title">日本・モンゴルのネットワーク</h3><p data-i18n="strengths.s4.text">国境を越えた相談や連携にも柔軟に対応できる体制を整えています。</p></div></div>
-          </div>
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <span class="kicker">ABOUT US</span>
+          <h2>Golden stone 株式会社</h2>
+          <h3 data-ja="信頼と実績で、次の空間づくりを支える。" data-en="Trusted demolition that supports the next use of every space.">信頼と実績で、次の空間づくりを支える。</h3>
+          <p data-ja="Golden stone株式会社は、解体工事を中心に、安全・品質・責任を大切にしながら、内装解体、建物解体、廃棄物管理まで一貫して対応します。現場ごとの条件を丁寧に確認し、確実な施工を積み重ねます。" data-en="Golden stone Co., Ltd. focuses on demolition, placing safety, quality and responsibility at the center of every project. From interior strip-out and structural demolition to waste management, we provide coordinated end-to-end execution.">Golden stone株式会社は、解体工事を中心に、安全・品質・責任を大切にしながら、内装解体、建物解体、廃棄物管理まで一貫して対応します。現場ごとの条件を丁寧に確認し、確実な施工を積み重ねます。</p>
+          <div class="values"><span data-ja="安全" data-en="Safety">安全</span><span data-ja="信頼" data-en="Trust">信頼</span><span data-ja="責任" data-en="Responsibility">責任</span></div>
         </div>
+        <div class="about-image"><img src="assets/about-worker.jpg" alt="Golden Stone demolition worker"/></div>
+        <div class="stats"><div><strong>7+</strong><span data-ja="年の経験" data-en="Years of experience">年の経験</span></div><div><strong>120+</strong><span data-ja="施工実績" data-en="Projects completed">施工実績</span></div><div><strong>JP / MN</strong><span data-ja="日本・モンゴル対応" data-en="Japan / Mongolia support">日本・モンゴル対応</span></div></div>
       </div>
     </section>
 
-    <section class="section message-section" id="message">
+    <section class="section message" id="message">
       <div class="container message-grid">
-        <div class="message-mark">GS</div>
-        <div>
-          <div class="section-tag gold" data-i18n="message.tag">MESSAGE</div>
-          <h2 data-i18n="message.title">代表メッセージ</h2>
-          <p class="message-lead" data-i18n="message.lead">「安全・信頼・責任」を軸に、未来へつながる仕事を。</p>
-          <p data-i18n="message.p1">私たちは、どのような現場においても安全がすべての基盤であると考えています。高い施工品質、専門性、そしてお客様との約束を守る責任感が、長期的な信頼につながります。</p>
-          <p data-i18n="message.p2">また、これからの建設・解体業には、品質だけでなく環境への配慮、資源の有効活用、適切な廃棄物処理が欠かせません。Golden Stoneは、より良い現場づくりと持続可能な社会への貢献を目指し、進化を続けます。</p>
-          <div class="signature"><span data-i18n="message.role">代表取締役</span><strong data-i18n="message.name">Chuluunbat Enkhbat</strong></div>
+        <div class="message-photo"><img src="assets/director-portrait.jpg" alt="Director of Golden Stone"/></div>
+        <div class="message-copy">
+          <span class="kicker">DIRECTOR'S MESSAGE</span>
+          <h2 data-ja="代表メッセージ" data-en="Director's Message">代表メッセージ</h2>
+          <p class="lead" data-ja="安全・信頼・責任を大切に、未来を共につくる。" data-en="Building the future together through safety, trust and responsibility.">安全・信頼・責任を大切に、未来を共につくる。</p>
+          <div class="message-body ja-message">
+            <p>お客様、パートナーの皆様に心よりご挨拶申し上げます。</p>
+            <p>Golden Stone株式会社は創業以来、「安全・信頼・責任」を大切な価値観として、解体工事、建設工事、廃棄物管理の分野で着実に事業を続けてまいりました。</p>
+            <p>私たちにとって、すべての仕事の基盤は安全です。同時に、確かな施工品質、専門技術、そしてお客様に対する責任を守り続けることが、長期的な信頼につながると考えています。</p>
+            <p>これまで7年以上にわたり、大小120件を超える工事を安全かつ高い品質で完了し、現場ごとに経験を積み重ねながら技術力を高めてきました。</p>
+            <p>今後も環境への負荷低減、廃棄物の適切な分別・処理、資源の有効活用を重視し、より安全で効率的、そして環境に配慮した施工を追求してまいります。</p>
+            <p class="quote">「Golden Stoneに任せて良かった」と感じていただけること。それが私たちの目標です。</p>
+          </div>
+          <div class="message-body en-message" hidden>
+            <p>To our valued clients and partners, thank you for your continued trust and support.</p>
+            <p>Since its founding, Golden Stone Co., Ltd. has upheld Safety, Trust and Responsibility as its core values while steadily developing its work in demolition, construction and waste management.</p>
+            <p>For us, safety is the foundation of every project. We believe that consistent quality, professional expertise and accountability to our clients are what create long-term trust.</p>
+            <p>Over more than seven years, we have completed over 120 projects of different sizes, building experience and continuously strengthening our technical capabilities.</p>
+            <p>We will continue to reduce environmental impact, improve waste sorting and processing, use resources efficiently, and pursue safer, more efficient and more sustainable solutions.</p>
+            <p class="quote">Our goal is simple: for every client to feel, “Choosing Golden Stone was the right decision.”</p>
+          </div>
+          <div class="signature"><strong data-ja="代表取締役" data-en="Director">代表取締役</strong><span data-ja="チュルーンバト・エンフバト" data-en="Enkhbat Chuluunbat">チュルーンバト・エンフバト</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section company-section" id="company">
+    <section class="section works" id="works">
       <div class="container">
-        <div class="section-tag" data-i18n="company.tag">COMPANY</div>
-        <h2 data-i18n="company.title">会社概要</h2>
-        <div class="company-table">
-          <div><span data-i18n="company.nameLabel">会社名</span><strong>Golden Stone株式会社</strong></div>
-          <div><span data-i18n="company.establishedLabel">設立</span><strong data-i18n="company.established">2019年7月19日</strong></div>
-          <div><span data-i18n="company.addressLabel">所在地</span><strong data-i18n="company.address">〒121-0801 東京都足立区東伊興2丁目1番2号 ブランピア101</strong></div>
-          <div><span data-i18n="company.businessLabel">主要事業</span><strong data-i18n="company.business">解体工事・建設工事・廃棄物管理・重機施工</strong></div>
-          <div><span>Website</span><strong>golden-stone.jp</strong></div>
-          <div><span>Email</span><strong>enkhbat@golden-stone.jp</strong></div>
+        <div class="section-head"><div><span class="kicker">WORKS</span><h2 data-ja="施工実績" data-en="Selected Works">施工実績</h2></div><p data-ja="内装解体から建物解体まで、現場に合わせて対応します。" data-en="From interior strip-out to full structural demolition, we adapt to each site.">内装解体から建物解体まで、現場に合わせて対応します。</p></div>
+        <div class="works-grid">
+          <article><img src="assets/service-1.jpg" alt="Interior strip-out"><h3 data-ja="オフィス内装解体" data-en="Office strip-out">オフィス内装解体</h3><p data-ja="内装撤去・原状回復" data-en="Interior removal and restoration">内装撤去・原状回復</p></article>
+          <article><img src="assets/service-2.jpg" alt="Building demolition"><h3 data-ja="建物解体" data-en="Building demolition">建物解体</h3><p data-ja="RC・S造対応" data-en="RC and steel structures">RC・S造対応</p></article>
+          <article><img src="assets/service-3.jpg" alt="Concrete removal"><h3 data-ja="コンクリート撤去" data-en="Concrete removal">コンクリート撤去</h3><p data-ja="基礎・土間・外構" data-en="Foundations and slabs">基礎・土間・外構</p></article>
+          <article><img src="assets/service-5.jpg" alt="Site restoration"><h3 data-ja="解体後整地" data-en="Site grading">解体後整地</h3><p data-ja="清掃・整地・引渡し" data-en="Cleanup, grading and handover">清掃・整地・引渡し</p></article>
         </div>
       </div>
     </section>
 
     <section class="contact" id="contact">
       <div class="container contact-grid">
-        <div>
-          <div class="section-tag gold" data-i18n="contact.tag">CONTACT</div>
-          <h2 data-i18n="contact.title">ご相談・お見積りは<br>お気軽にお問い合わせください。</h2>
-          <p data-i18n="contact.text">解体工事、建設工事、現場管理、重機施工など、案件の規模を問わずご相談ください。</p>
+        <div class="contact-copy">
+          <span class="kicker light">CONTACT</span>
+          <h2 data-ja="お問い合わせ" data-en="Contact">お問い合わせ</h2>
+          <p data-ja="ご相談・お見積りはお気軽にお問い合わせください。" data-en="Contact us for consultations and quotations.">ご相談・お見積りはお気軽にお問い合わせください。</p>
+          <div class="contact-list">
+            <a href="tel:+818043509148"><b>JP</b> +81 080-4350-9148</a>
+            <a href="tel:+97699769016"><b>MN</b> +976 9976-9016</a>
+            <a href="mailto:enkhbat@golden-stone.jp">enkhbat@golden-stone.jp</a>
+            <span>東京都足立区東伊興二丁目1番2号 ブランピア101</span>
+          </div>
         </div>
-        <div class="contact-card">
-          <a href="tel:+818043509148"><span>Japan</span><strong>+81 080-4350-9148</strong></a>
-          <a href="tel:+97699769016"><span>Mongolia</span><strong>+976 9976-9016</strong></a>
-          <a href="mailto:enkhbat@golden-stone.jp"><span>Email</span><strong>enkhbat@golden-stone.jp</strong></a>
-          <div><span data-i18n="contact.addressLabel">Address</span><strong data-i18n="contact.address">東京都足立区東伊興2丁目1番2号 ブランピア101</strong></div>
-        </div>
+        <div class="line-box"><div class="line-title"><span class="line-pill">LINE</span><div><strong data-ja="LINEでお問い合わせ" data-en="Contact us on LINE">LINEでお問い合わせ</strong><small data-ja="QRコードを読み取って追加してください" data-en="Scan the QR code to add us">QRコードを読み取って追加してください</small></div></div><img src="assets/line-qr.png" alt="Golden Stone LINE QR code"/></div>
+        <form class="contact-form" action="mailto:enkhbat@golden-stone.jp" method="post" enctype="text/plain">
+          <input name="name" required placeholder="お名前" data-placeholder-ja="お名前" data-placeholder-en="Name" />
+          <input name="email" type="email" required placeholder="メールアドレス" data-placeholder-ja="メールアドレス" data-placeholder-en="Email" />
+          <textarea name="message" required placeholder="お問い合わせ内容" data-placeholder-ja="お問い合わせ内容" data-placeholder-en="Message"></textarea>
+          <button type="submit" data-ja="送信する" data-en="Send inquiry">送信する</button>
+        </form>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-wrap">
-      <div class="brand footer-brand"><span class="brand-mark">GS</span><span class="brand-copy"><strong>Golden Stone</strong><small>株式会社</small></span></div>
-      <p>© <span id="year"></span> Golden Stone Co., Ltd. <span data-i18n="footer.rights">All Rights Reserved.</span></p>
-      <a href="#top" data-i18n="footer.top">Back to top ↑</a>
-    </div>
-  </footer>
+  <footer class="footer"><div class="container footer-row"><div class="footer-brand"><img src="assets/golden-stone-logo.png" alt="Golden Stone logo"><span>Golden stone 株式会社</span></div><div>© 2026 Golden stone 株式会社. All rights reserved.</div></div></footer>
 
   <script src="script.js"></script>
 </body>
